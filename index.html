@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+        body {
+                background: #00ffff;
+            }
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  text-align: center;
+  padding: 10px;
+}
+.center {
+  padding: 70px 0;
+  border: 3px solid green;
+  text-align: center;
+}
+</style>
+
+</head>
+    <body>
+        <title>Registration Form</title>
+        <h1>Welcome to Registration form </h1>
+       
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        <input type ="text" placeholder="Name" name="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password:
+                    </td>
+                    <td>
+                        <form action="/action_page.php">
+                        <input type="password" id="pwd" name="pwd" required
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                        </form>                 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender:
+                    </td>
+                    <td>
+                        <input type ="radio" placeholder="Gender">Male
+                        <input type ="radio" placeholder="Gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td>
+                       <form>
+                           <input type="email" name="email" required placeholder="Enter a valid email address @gmail.com">
+                      </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone No:
+                    </td>
+                    <td>
+                        
+                       <input type="text" pattern="[789][0-9]{9}">
+                       
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type ="Submit" value="Submit" name="">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
